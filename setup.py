@@ -1,28 +1,23 @@
-from setuptools import setup
-from setuptools import find_packages
+import setuptools
 
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
 
-setup(
-    name='debiaosgs',
-    version='0.0.4',
-    python_requires='>=3.6.0',
-    author='Debiao',
-    author_email='muyiorlk@gmail.com',
-    url='https://github.com/foolmuyi/debiaosgs',
-    description='SGS Room Monitor',
-    long_description='Monitoring SGS website for new listed room, notify by email',
-    long_description_content_type='text/markdown',
-    packages=find_packages(),
-    entry_points={
-    'console_scripts': ['example=src.sgs:main'],
-    },
-    install_requires=['selenium'],
+setuptools.setup(
+    name="debiaosgs",
+    version="0.0.5",
+    author="Debiao",
+    author_email="muyiorlk@gmail.com",
+    description="SGS Room Monitor",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/foolmuyi/debiaosgs",
     classifiers=[
-    'License :: OSI Approved :: MIT License',
-
-    'Programming Language :: Python :: 3.6',
-    'Programming Language :: Python :: 3.7',
-    'Programming Language :: Python :: 3.8',
-    'Programming Language :: Python :: 3.9',
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
     ],
+    packages=setuptools.find_packages(),
+    install_requires=['matplotlib', 'numpy', 'pandas', 'requests', 'eth-account', 'web3'],
+    python_requires='>=3.6',
 )
