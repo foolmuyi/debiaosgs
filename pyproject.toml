@@ -1,3 +1,32 @@
 [build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "debiaosgs"
+version = "0.0.7"
+dependencies = [
+  "matplotlib",
+  "numpy",
+  "pandas",
+  "requests",
+  "eth-account",
+  "web3"]
+requires-python = ">=3.5"
+authors = [
+  {name = "Debiao", email = "muyiorlk@gmail.com"}
+]
+maintainers = [
+  {name = "Debiao", email = "muyiorlk@gmail.com"}
+]
+description = "Monitor sgs new room"
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python"
+]
+
+[project.urls]
+Homepage = "https://github.com/foolmuyi/debiaosgs"
+Repository = "https://github.com/foolmuyi/debiaosgs"
