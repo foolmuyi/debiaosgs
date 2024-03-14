@@ -3,11 +3,14 @@ from setuptools import setup, find_packages
 
 setup(
     name='debiaosgs',
-    version='0.0.8',
+    version='0.0.9',
     python_requires='>=3.6.0',
     author='Debiao',
     author_email='muyiorlk@gmail.com',
-    url='https://github.com/foolmuyi/debiaosgs',
+    project_urls={
+        'Source': 'https://github.com/foolmuyi/debiaosgs',
+        'Issues': 'https://github.com/foolmuyi/debiaosgs/issues',
+        },
     description='SGS Room Monitor',
     long_description='Monitoring SGS website for new listed room, notify by email',
     long_description_content_type='text/markdown',
